@@ -1,17 +1,18 @@
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  height: 100vh;
   background: linear-gradient(to bottom, #615dad, #ffc8da);
   background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
 }
 
 .piskvorky__card {
 width: 60%;
-height:70%;
+max-width: 400px;
 background: #283e50;
 border-radius: 10px;
 display: flex;
@@ -36,6 +37,7 @@ color: white;
 font-family: sans-serif;
 text-align: center;
 margin: 1rem;
+padding: 1rem;
 }
 
 .piskvorky__button {
