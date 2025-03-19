@@ -75,3 +75,22 @@ line-height: 1.3;
 .piskvorky__button--blue:hover {
   background-color: #0090e9;
 }
+
+@media (max-width: 450px){
+  body {
+    background:none;
+    padding: 0px;
+  }
+  .piskvorky__card {
+    width: 100%;
+    max-width: none;
+    height: 100vh;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
