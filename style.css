@@ -78,6 +78,8 @@ line-height: 1.3;
 
 .piskvorky__game--body {
   width: 80vmin;
+  margin: 0;
+  padding-bottom: 2rem;
 }
 
 .piskvorky__game--header {
@@ -86,6 +88,7 @@ line-height: 1.3;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 1rem;
+  width: 80vmin;
 }
 
 h2 {
@@ -109,10 +112,10 @@ h2 {
 }
 
 .piskvorky__button--small {
-  width: 50px;
-  height: 50px;
-  padding: 1rem;
-  margin: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -123,11 +126,12 @@ h2 {
 .piskvorky__game--heading {
   padding-top: 2rem;
 }
+
 .piskvorky__grid {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 500px; 
+  /*max-width: 500px;*/
   margin: 0 auto;
 }
 
