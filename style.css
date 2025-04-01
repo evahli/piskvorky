@@ -72,14 +72,17 @@ line-height: 1.3;
   background-color: #0197f6;
 }
 
-.piskvorky__button--blue:hover {
+.piskvorky__button--blue:hover, 
+.piskvorky__button--blue:focus {
   background-color: #0090e9;
 }
 
 .piskvorky__game--body {
   width: 80vmin;
-  margin: 0;
-  padding-bottom: 2rem;
+  margin: 5vh auto 10vh;
+  padding-bottom: 0;
+  position: relative;
+  min-height: 100%;
 }
 
 .piskvorky__game--header {
@@ -87,20 +90,20 @@ line-height: 1.3;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 1rem;
-  width: 80vmin;
 }
 
 h2 {
   color: white;
   text-transform:uppercase ;
-  font-family: sas-serif;
+  font-family: sans-serif;
+  font-size: 3vh;
+  font-weight: 500;
 }
 
 .piskorky__button--player {
   display: inline-flex;
-  width: 40px;
-  height: 40px;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   border: 3px solid white;
   background-color: transparent;
@@ -112,8 +115,8 @@ h2 {
 }
 
 .piskvorky__button--small {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   padding: 0.5rem;
   margin-left: 0.5rem;
   display: flex;
@@ -124,28 +127,29 @@ h2 {
 }
 
 .piskvorky__game--heading {
-  padding-top: 2rem;
+  padding-top: 3vh;
+  font-size: 6vh;
 }
 
 .piskvorky__grid {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  /*max-width: 500px;*/
   margin: 0 auto;
 }
 
 .piskvorky__button-grid {
   width: 10%;
   aspect-ratio: 1/1; 
-  background-color: #f0e8f2; 
+  background-color: rgba(255, 255, 255, 0.3); 
   border: 1px solid #666;
   cursor: pointer;
   display: flex;
 }
 
-.piskvorky__button-grid:hover {
-  background-color: #f6f4f7;
+.piskvorky__button-grid:hover,
+.piskvorky__button-grid:focus {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 
