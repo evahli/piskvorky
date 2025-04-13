@@ -25,21 +25,15 @@ gridButtons.forEach((button) => {
   });
 });
 
+const restartButtonElement = document.querySelector('#restart-button');
+restartButtonElement.addEventListener('click', (event) => {
+  const confirmValue = confirm('Opravdu chces zacit znovu?')
+  if (confirmValue === false) {
+    event.preventDefault();
+  }
+});
+
 /* 
-button id="playerIndicator"
-S každým kliknutím změň hodnotu proměnné currentPlayer na opačnou. Z circle na cross a naopak.
+Může se stát, že uživatel se omylem uklikne a modrým tlačítkem pro restart přijde o rozehranou hru. Proto přidej modrému odkazu posluchač události, který se po kliknutí uživatele zeptá zabudovanou funcí confirm, jestli chce hru opravdu restartovat. Pokud ne, zavolej event.preventDefault(), čímž zabráníš tomu, aby prohlížeč přešel na odkazovanou stránku (tj. načetl stránku s prázdnou hrou). Funkce confirm vrací true nebo false podle toho, zda uživatel souhlasil nebo nesouhlasil s potvrzovací zprávou v dialogu.
 
-Podle hotnoty proměnné na stránce uprav znázornění, kdo právě hraje.
-
-
-event.target.classList.add('piskvorky__button-grid--circle');
-  });
-  if (currentPlayer === 'circle') {
-    currentPlayer = 'cross';
-    const currentPlayerIcon = document.querySelector('#playerIndicator');
-    currentPlayerIcon.classList.add('piskorky__button--player--cross')
-  } else {
-    currentPlayer = 'circle';
-    const currentPlayerIcon = document.querySelector('#playerIndicator');
-    currentPlayerIcon.classList.add('piskorky__button--player--circle')
 */
