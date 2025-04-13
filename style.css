@@ -110,6 +110,34 @@ h2 {
   margin-left: 10px;
 }
 
+.piskorky__button--player--cross {
+  background-image: url('cross.svg');
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.piskorky__button--player--circle {
+  background-image: url('circle.svg');
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
 .spacer {
   flex: 1;
 }
