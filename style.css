@@ -15,36 +15,36 @@ body {
 }
 
 .piskvorky__card {
-width: 60%;
-max-width: 400px;
-background: #283e50;
-border-radius: 10px;
-display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
+  width: 60%;
+  max-width: 400px;
+  background: #283e50;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .piskvorky__img {
-width: 100%;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 h1 {
-text-align: center;
-font-family:"Lobster";
-font-size: 3rem;
-color: white;
-margin: 1rem 0 0.5rem;
+  text-align: center;
+  font-family: "Lobster";
+  font-size: 3rem;
+  color: white;
+  margin: 1rem 0 0.5rem;
 }
 
 .piskvorky__text {
-color: white;
-font-family: sans-serif;
-text-align: center;
-margin: 1rem;
-padding: 1rem;
-line-height: 1.3;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  line-height: 1.3;
 }
 
 .piskvorky__button {
@@ -65,14 +65,14 @@ line-height: 1.3;
 }
 
 .piskvorky__button--green:hover {
-  background-color:#1cbb96;
+  background-color: #1cbb96;
 }
 
 .piskvorky__button--blue {
   background-color: #0197f6;
 }
 
-.piskvorky__button--blue:hover, 
+.piskvorky__button--blue:hover,
 .piskvorky__button--blue:focus {
   background-color: #0090e9;
 }
@@ -94,7 +94,7 @@ line-height: 1.3;
 
 h2 {
   color: white;
-  text-transform:uppercase ;
+  text-transform: uppercase;
   font-family: sans-serif;
   font-size: 3vh;
   font-weight: 500;
@@ -140,8 +140,8 @@ h2 {
 
 .piskvorky__button-grid {
   width: 10%;
-  aspect-ratio: 1/1; 
-  background-color: rgba(255, 255, 255, 0.3); 
+  aspect-ratio: 1/1;
+  background-color: rgba(255, 255, 255, 0.3);
   border: 1px solid #666;
   cursor: pointer;
   display: flex;
@@ -152,7 +152,19 @@ h2 {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+.piskvorky__button-grid--circle {
+  background-image: url("circle_black.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+.piskvorky__button-grid--cross {
+  background-image: url("cross_black.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 /* @media (max-width: 450px){
   body {
