@@ -2,6 +2,7 @@ import { findWinner } from 'https://unpkg.com/piskvorky@0.1.4';
 
 let currentPlayer = 'circle';
 
+// vytvoreni pole pro importovanou funkci findWinner
 const getGameStatus = () => {
   const gameStatus = [];
   const buttons = document.querySelectorAll('.piskvorky__button-grid');
@@ -24,7 +25,7 @@ gridButtons.forEach((button) => {
       event.target.classList.add('piskvorky__button-grid--cross');
     }
     event.target.disabled = true;
-
+    // cast funkce pro kontrolu viteze hry
     const gameStatus = getGameStatus();
     const winner = findWinner(gameStatus);
 
@@ -32,6 +33,8 @@ gridButtons.forEach((button) => {
       const winnerSymbol = winner === 'o' ? 'kolečko' : 'křížek';
       if ((winnerSymbol === 'tie')) {
         alert('hra skončila remízou');
+        location.reload();
+        return;
       }
       setTimeout(() => {
         alert(`Vyhrál hráč se symbolem ${winnerSymbol}`);
@@ -62,7 +65,3 @@ restartButtonElement.addEventListener('click', (event) => {
   }
 });
 
-/* 
-1. funkce, ktera vytvori pole pro importovanou funkci findWinner
-
-*/
