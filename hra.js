@@ -40,7 +40,7 @@ gridButtons.forEach((button) => {
         alert(`Vyhrál hráč se symbolem ${winnerSymbol}`);
         location.reload();
         return;
-      }, 1000);
+      }, 400);
     }
 
     const currentPlayerIcon = document.querySelector('#playerIndicator');
